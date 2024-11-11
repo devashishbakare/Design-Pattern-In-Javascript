@@ -1,0 +1,25 @@
+The Factory Pattern addresses the problem of object creation when you have a superclass with multiple subclasses(children), and you want to share a responsibility of choosing which subclass to instantiate.
+Instead of directly creating objects, the Factory Pattern provides a mechanism to create instances based on conditions or inputs.
+Improving flexibility and reducing tight coupling between classes.
+
+Remember the Factory Pattern as a "Middleman" for object creation.
+Just like a pizza shop where you tell them what kind of pizza you want
+The pizza factory class creates the specific object (pizza) you need without revealing the details of how each is made.
+
+When to Use It
+When a class can’t anticipate the type of objects it needs to create.
+When you want to encapsulate the instantiation(object creation) logic for specific object types.
+When you want to introduce flexibility in your code so you can add new object types easily without modifying existing code.
+
+Real-World Analogy
+Imagine a Vehicle Factory. When you need a vehicle, you specify what type (car, bike, truck), and the factory decides which specific vehicle to create based on your choice.
+You don’t directly create a car or a bike—you just tell the factory your preference, and it does the rest.
+
+Story to Remember It
+Think of a pizza shop with a pizza factory. You order a "Pepperoni Pizza" or a "Paneer chesse Pizza," and the factory (pizza shop) makes it for you without exposing how each type is prepared.
+The factory simplifies your interaction with different types of pizzas by providing a common way to order them.
+
+Key Points to Note
+Decoupling: Factory Pattern keeps the client code decoupled from the instantiation process.
+Flexibility: If you add new shapes like Triangle or Hexagon, you only need to update the factory, not the client code.
+Centralized Control: The factory class centralizes the logic for creating different shape types.
