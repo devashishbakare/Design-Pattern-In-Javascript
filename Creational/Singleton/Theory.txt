@@ -1,0 +1,23 @@
+The Lighthouse Story
+Imagine you live in a coastal village where ships constantly need guidance to navigate safely. A single lighthouse is built to light up the entire coast, ensuring that all ships can see it and avoid dangerous waters.
+Why just one lighthouse?
+Consistency: All ships rely on a single beacon of light, preventing confusion from multiple, conflicting signals.
+Efficiency: Running one lighthouse saves resources compared to multiple ones.
+Global Access: Everyone along the coast can see the lighthouse—it’s there for everyone to use without duplication.
+In the same way, a Singleton is like a lighthouse for your program: one instance that everyone can access, guiding consistent behavior and saving resources.
+
+The Time Square
+In a village there is time clock on big building, everyone have access to same clock for there time
+- All people are rely on single time clock
+- Instead of buying a clock for each home, we have saved a lot of resources to efficiency is there
+- Everyone access the clock meaning it's a global one
+
+Application of the singleton pattern
+
+In many applications, we need a single, consistent instance of a class that can be accessed globally. Examples include:
+A database connection manager, where having multiple instances would waste resources.
+A logging system, where you want one consistent log file to capture all events.
+A configuration manager, where only one copy of configuration data should exist.
+
+The Singleton Pattern ensures that a class has only one instance and provides a global point of access to it.
+
