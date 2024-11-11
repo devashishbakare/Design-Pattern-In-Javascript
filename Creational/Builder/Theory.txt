@@ -1,0 +1,13 @@
+Imagine you’re ordering a custom-built computer.
+You might start with a base model and then customize it by adding RAM, choosing a graphics card, and selecting a storage type.
+Instead of passing all specifications at once, the Builder Pattern lets you create the computer step-by-step by specifying each part as needed.
+
+When to Use It
+When an object has a complex setup with multiple fields or configurations.
+When you want to make the code more readable by organizing object construction steps.
+When you want to allow different configurations of an object with varying combinations of optional fields.
+
+The Builder Pattern solves the problem of constructing complex objects by separating the construction process from the representation.
+This allows us to create objects step-by-step and gives us control over how each part is constructed.
+It’s particularly useful when you have a class with multiple fields or when constructing an object requires multiple steps.
+
