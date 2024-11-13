@@ -1,0 +1,15 @@
+Decorator Pattern
+What Problem Does It Solve?
+The Decorator Pattern allows you to dynamically add functionality or behavior to an object without altering its structure. This is particularly useful when you need to enhance the capabilities of an object in a flexible and scalable way.
+
+Real-World Analogy
+Imagine you’re at a coffee shop. You can order a basic coffee, but you might want to add extra features like milk, sugar, or whipped cream. Each of these is an optional "decoration" for the base coffee. The coffee shop doesn't create a new coffee for every possible combination of extras. Instead, it "wraps" the base coffee with additional features.
+
+Where to Use?
+When you need to add functionality dynamically without modifying the existing code.
+When subclassing would result in an explosion of classes for every possible combination of features.
+
+How to Remember It?
+Think of decorating a Christmas tree. The tree is the base object, and you can add decorations (lights, ornaments, etc.) to enhance it, layer by layer.
+
+
