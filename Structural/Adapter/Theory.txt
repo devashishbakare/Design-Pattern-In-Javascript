@@ -1,0 +1,22 @@
+Adapter Pattern
+
+Purpose:
+The Adapter Pattern converts the interface of a class into another interface that a client expects. It acts as a bridge between two incompatible interfaces, allowing classes to work together that otherwise couldn't due to interface mismatches.
+Problem it Solves:
+Imagine you have:
+A client class that expects data in JSON format.
+A service class that provides data in XML format.
+The two can't directly communicate because they speak different "languages." An adapter acts as a translator, converting XML data to JSON so the client can use it.
+Real-World Analogy:
+Think of an electric socket adapter:
+You travel to a country where the sockets are different from your device’s plug.
+You use an adapter to make the plug fit the socket.
+The electric adapter translates the incompatible interfaces (socket to plug).
+Key Features:
+Re-usability: Adapts existing code to work with new requirements.
+Flexibility: Allows unrelated classes to work together.
+
+Example Use Cases:
+Adapting a legacy codebase to work with new modules.
+Using third-party libraries that don’t match your application’s interfaces.
+Converting data formats (e.g., XML to JSON).

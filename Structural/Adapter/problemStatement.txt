@@ -1,0 +1,1 @@
+Imagine you're building an e-commerce application, and you want to support multiple payment gateways like PayPal and Stripe. However, each gateway has a different API for processing payments. You want a unified interface for your app to handle these gateways seamlessly.
