@@ -1,0 +1,1 @@
+You want to load images in an application. However, loading high-resolution images can be time-consuming. can you create a system where first time it should show loading and then show image, once image is loaded every time user asked for same image you don't need to show loader again

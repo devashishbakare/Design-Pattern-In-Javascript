@@ -1,0 +1,20 @@
+The Proxy Pattern provides a substitute or placeholder to control access to an object. It can be used to add functionality like lazy initialization, access control, logging, caching, etc., without changing the original object.
+
+When to use?
+Lazy Loading: Create objects only when needed.
+Access Control: Restrict access to certain methods or sensitive objects.
+Remote Proxy: Represent objects in different address spaces (e.g., client-server systems).
+Logging and Monitoring: Log access or usage statistics without modifying the original object.
+
+Story to remember
+Think of a proxy server you might use in your browser. It acts as an intermediary:
+If the requested content is cached, it delivers it directly (lazy loading).
+If you're not authorized, it blocks you (access control).
+If you're allowed, it forwards the request to the original server.
+Similarly, the Proxy Pattern intermediates between a client and an original object.
+
+Example for lazy loading :
+Image Viewer : You want to load images in an application. However, loading high-resolution images can be time-consuming. The Proxy Pattern can delay the loading of images until they're actually displayed.
+
+Example for access control
+Employee Internet Access Grant: you want to only give internet access to those who is present in db
