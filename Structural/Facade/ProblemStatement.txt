@@ -1,0 +1,3 @@
+Simplify the home automation system for user so that he can use following mode with his home automation remote interface
+- movie mode
+- party mode
