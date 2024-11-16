@@ -1,0 +1,22 @@
+1. What is the Strategy Pattern?
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets the algorithm vary independently of the clients that use it.
+
+Algorithm is refers as get things done with different ways and its up to user to do that dynamically for example
+you need to sort array, now user has to decide by which strategy he used to sort but at the end we are doing the sorting.
+you need to go from location A to location B, you will reach there but the vehicle you use to reach there might vary.
+
+If underlying in same but the chooses will vary dynamically up to user, we can use the strategy pattern there
+
+When to Use?
+
+When you have multiple ways of performing a task, and you want to choose the appropriate one at runtime.
+To avoid using if-else or switch-case for selecting algorithms.
+
+When algorithms are likely to change, but their context (the client) remains the same.
+
+How to Remember?
+Story:
+Imagine a navigation app (like Google Maps). You want to calculate a route to your destination. Depending on the mode of transport (car, walking, cycling), the algorithm to calculate the route changes. But the app remains the same!
+Real-world Example:
+Payment processing systems (credit card, PayPal, cryptocurrency).
+Sorting algorithms (QuickSort, MergeSort, BubbleSort)
