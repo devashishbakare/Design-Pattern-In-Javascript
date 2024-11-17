@@ -1,0 +1,30 @@
+What is the Observer Pattern?
+The Observer Pattern establishes a one-to-many dependency between objects. When one object (the subject) changes state, all its dependents (observers) are notified and updated automatically.
+
+How to Remember It?
+Think of a YouTube Channel Subscription:
+YouTube Channel (Subject): Notifies subscribers when new content is uploaded.
+Subscribers (Observers): Receive notifications when the channel updates.
+
+Where to Use It?
+Use the Observer Pattern when:
+You have a central object that needs to notify multiple dependent objects.
+The number of dependents (observers) can vary dynamically.
+Loose coupling is required between the subject and its observers.
+
+Real-World Example
+Stock Market: When a stock price changes, all registered brokers and trading systems are notified.
+Weather App: Weather stations push updates to apps.
+
+Observers: Implement the Observer interface.
+They subscribe to the subject and define the update method for notifications.
+
+Subject: Maintains a list of observers and notifies them when state changes.
+Implements registerObserver, removeObserver, and notifyObservers.
+
+Loose Coupling: The subject does not know the exact details of observers, promoting flexibility.
+
+Important things
+Dynamic Subscriptions: Subscribers can join or leave the channel at any time without impacting others.
+Loose Coupling: The channel doesn't need to know the specifics of the subscribers.
+Automated Notifications: Subscribers are notified automatically whenever the channel updates.
