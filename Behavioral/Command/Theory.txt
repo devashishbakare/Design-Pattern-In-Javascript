@@ -1,0 +1,59 @@
+Command Pattern
+
+The **Command Pattern** encapsulates a request as an object, allowing you to:
+1. Parameterize objects with different requests.
+2. Queue or log requests.
+3. Support undoable operations.
+
+The pattern has four key components:
+- **Command**: Encapsulates the action and its parameters.
+- **Invoker**: Knows how to execute commands (e.g., a remote control).
+- **Receiver**: Performs the actual work (e.g., a light, TV).
+- **Client**: Creates the command and configures the invoker.
+---
+
+### Real-World Example1: Smart Home Commands
+Imagine you have a **smart home system** where you can control devices like lights and fans using voice commands or an app.
+
+### Real-World Example2: Editor command where you have an editor there are multiple command that can possible
+1) view document in editor
+2) edit document in editor
+3) help request for document
+
+The Editor (Product):
+Think of the editor as the thing you want to interact with. It can do many things (e.g., view, edit, help, etc.).
+
+The Commands (Actions):
+Each command represents one specific action (like view, edit, or help). Every command knows:
+What action it needs to perform (its execute method).
+What to undo, if required (its undo method).
+The commands also know who they’re working with (the Editor in this case). They carry the editor as part of their data.
+
+The Command Executor (Invoker):
+The executor doesn’t care what the commands are doing. It just executes them by calling their execute method.
+It also keeps track of executed commands (e.g., for undo/redo).
+
+#### **Without Command Pattern:**
+The app directly interacts with the devices, so adding new devices or actions is cumbersome.
+
+---
+Real-World Analogy:
+Imagine you’re in a restaurant:
+The kitchen (Editor) prepares food.
+The orders (Commands) tell the kitchen what food to make (e.g., “Make pasta”).
+The waiter (Invoker) is the one who takes the order and gives it to the kitchen. The waiter doesn’t know how to cook; they just pass along the request.
+
+#### **With Command Pattern:**
+You encapsulate each action (e.g., turn light on/off, adjust fan speed) into a **command**. The app (Invoker) sends these commands to the devices (Receivers), simplifying extensibility.
+
+---
+
+### Story to Remember:
+Think of a **remote control for a TV**. Each button on the remote is tied to a specific command (e.g., increase volume, switch channel). The TV is the receiver. You can replace the remote or TV, but the commands remain reusable.
+
+---
+
+### When to Use:
+- When you want to decouple objects that invoke operations from those that perform them.
+- To queue, log, or undo operations.
+- In GUI buttons (e.g., Save, Undo, Redo) or smart home systems.
